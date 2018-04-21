@@ -22,8 +22,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 110px;
+    width: 100%;
     background-color: #1a1f71;
-    border-bottom: solid 7px;
+    background: linear-gradient(90deg, #1a1e5a, #143D9B) !important;
+    border-bottom: solid 8px;
     border-image: linear-gradient(to right, #F0BF00, #EADA00);
     border-image-slice: 1;
     /*CSS gradient F0BF00 to EADA00*/
@@ -37,16 +40,18 @@ li {
 #logo {
     /*  margin-top: 2%;
      margin-left: 80%;*/
-    height: 2.5rem;
+    height: 2.0rem;
 }
 
 .navbar {
     margin-left: 5%;
     text-align: center;
     margin: auto;
+    background-color: linear-gradient(90deg, #1a1e5a, #143D9B);
 }
 
 li a {
+    height: 1.5rem;
     display: block;
     color: white;
     text-align: center;
@@ -56,6 +61,7 @@ li a {
     /* font-family: 'open-sans', sans-serif, Tahoma;*/
     font-size: 1.3rem;
     font-weight: 300;
+    margin-top: 2%;
 }
 
 li a:hover {
