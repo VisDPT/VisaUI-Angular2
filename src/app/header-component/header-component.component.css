@@ -1,0 +1,44 @@
+/*
+Colors Scheme
+- gold: #f7b600 
+- navy: #1a1f71
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a1f71;
+    border-bottom: #f7b600 solid 9px;
+}
+
+li {
+    float: left;
+}
+
+#logo {
+    margin-top: 20%;
+    margin-left: 80%;
+    height: 2.5rem;
+}
+
+#payWithVisa {
+    margin-left: 80%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2rem 20px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    /* font-family: 'open-sans', sans-serif, Tahoma;*/
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+li a:hover {
+    background-color: #111;
+}
