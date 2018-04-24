@@ -86,7 +86,7 @@ a:hover {
     color: #EFC102;
 }
 
-@media screen and (max-width: 7600px) {
+@media screen and (max-width: 886px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -96,7 +96,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 886px) {
     .topnav.responsive {
         position: relative;
     }
