@@ -15,6 +15,7 @@ Colors Scheme
 
 body {
     text-align: center;
+    /* background-image: url("./assets/images/VizaFifa.jpeg");*/
 }
 
 ul {
@@ -66,4 +67,33 @@ li a {
 
 li a:hover {
     color: #EFC102;
+}
+
+#payWithVisaNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 450px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid 1px #1a1e5a;
+    border-image-slice: 1;
+    /*CSS gradient F0BF00 to EADA00*/
+    text-align: center;
+    color: #1a1e5a;
+}
+
+#payWithVisaNav li a {
+    height: 1.5rem;
+    display: block;
+    color: #1a1e5a;
+    text-align: center;
+    padding: 2rem 20px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    /* font-family: 'open-sans', sans-serif, Tahoma;*/
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 2%;
 }
