@@ -124,8 +124,6 @@ ul {
     overflow: hidden;
     height: 110px;
     width: 100%;
-    background-color: #1a1f71;
-    background: linear-gradient(90deg, #1a1e5a, #143D9B) !important;
     border-bottom: solid 1px;
     border-image: linear-gradient(to right, #F0BF00, #EADA00);
     border-image-slice: 1;
@@ -152,8 +150,6 @@ li {
     overflow: hidden;
     height: 110px;
     width: 100%;
-    background-color: #1a1f71;
-    background: linear-gradient(90deg, #1a1e5a, #143D9B) !important;
     border-image: linear-gradient(to right, #F0BF00, #EADA00);
     border-image-slice: 1;
     /*CSS gradient F0BF00 to EADA00*/
