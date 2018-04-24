@@ -11,26 +11,37 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <div class="navItems">
-                <li>
-                    <a><img src="../assets/images/logo.png" id="logo"></a>
-                </li>
-                <li><a class="active" href="#payWithVisa" id="payWithVisa"> Pay with Visa</a></li>
-                <li><a href="#PartnerWithUs">Partner With Us</a></li>
-                <li><a href="#runYourBusiness">Run Your Business</a></li>
-                <li><a href="#travelWithVisa">Travel With Visa</a></li>
-                <li><a href="#visaEverywhere">Visa Everywhere </a></li>
-                <li>
-                    <a href="#search">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-            </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active"><img src="../assets/images/logo.png" id="logo" alt="Visa Logo"></a>
 
-        </ul>
+        <a class="active" href="#payWithVisa" id="payWithVisa"> Pay with Visa</a>
+        <a href="#PartnerWithUs">Partner With Us</a>
+        <a href="#runYourBusiness">Run Your Business</a>
+        <a href="#travelWithVisa">Travel With Visa</a>
+        <a href="#visaEverywhere">Visa Everywhere </a>
+        <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    <!--  <div class="topnav" id="myTopnav">
+
+        <div class="navItems">
+
+            <a><img src="../assets/images/logo.png" id="logo"></a>
+
+            <a class="active" href="#payWithVisa" id="payWithVisa"> Pay with Visa</a>
+            <a href="#PartnerWithUs">Partner With Us</a>
+            <a href="#runYourBusiness">Run Your Business</a>
+            <a href="#travelWithVisa">Travel With Visa</a>
+            <a href="#visaEverywhere">Visa Everywhere </a>
+
+            <a href="#search">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+        </div>
+
+
+    </div> -->
     <div class="navbar">
         <ul>
             <div id="payWithVisaNav">
@@ -52,6 +63,17 @@
     </div>
 
     <app-root>Loading...</app-root>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
