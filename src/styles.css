@@ -150,22 +150,6 @@ li {
     float: left;
 }
 
-.navbar {
-    margin-left: 5%;
-    text-align: center;
-    margin: auto;
-    background-color: linear-gradient(90deg, #1a1e5a, #143D9B);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 110px;
-    width: 100%;
-    border-image: linear-gradient(to right, #F0BF00, #EADA00);
-    border-image-slice: 1;
-    /*CSS gradient F0BF00 to EADA00*/
-    text-align: center;
-}
-
 li a {
     height: 1.5rem;
     display: block;
@@ -184,14 +168,31 @@ li a {
 Pay with Visa
 =============*/
 
+.navbar {
+    margin-left: 5%;
+    text-align: center;
+    margin: auto;
+    background-color: linear-gradient(90deg, #1a1e5a, #143D9B);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 170px;
+    width: 100%;
+    border-image: linear-gradient(to right, #F0BF00, #EADA00);
+    border-image-slice: 1;
+    /*CSS gradient F0BF00 to EADA00*/
+    text-align: center;
+}
+
 .secondNav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 450px;
+    height: 200px;
     width: 100%;
     background-color: #ffffff;
+    opacity: 0.85;
     border-bottom: solid 1px #1a1e5a;
     border-image-slice: 1;
     /*CSS gradient F0BF00 to EADA00*/
@@ -200,7 +201,7 @@ Pay with Visa
 }
 
 .secondNav li a {
-    height: 1.5rem;
+    height: 200px;
     display: block;
     color: #1a1e5a;
     text-align: center;
@@ -214,6 +215,14 @@ Pay with Visa
     margin-top: 2%;
 }
 
+.navbar ul {
+    height: 400px;
+}
+
 #partnerWithUsNav {
     height: -1.5rem;
+}
+
+.secondNavIcons {
+    height: 50px;
 }
