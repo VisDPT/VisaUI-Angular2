@@ -54,6 +54,7 @@ body {
     border-image-slice: 1;
     /*CSS gradient F0BF00 to EADA00*/
     text-align: center;
+    vertical-align: middle;
 }
 
 .topnav a {
@@ -101,7 +102,7 @@ a:hover {
     color: #EFC102;
 }
 
-@media screen and (max-width: 886px) {
+@media screen and (max-width: 958px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -111,7 +112,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 886px) {
+@media screen and (max-width: 958px) {
     .topnav.responsive {
         position: relative;
     }
@@ -226,3 +227,5 @@ Pay with Visa
 .secondNavIcons {
     height: 50px;
 }
+
+.magnifyingGlass {}
