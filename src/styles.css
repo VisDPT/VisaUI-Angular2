@@ -15,10 +15,11 @@ Colors Scheme
 
 body {
     text-align: center;
+    background: linear-gradient(90deg, #132E96, #2861AE) !important;
     background-image: url("./assets/images/VizaFifa.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    /*  background-size: cover;*/
     background-attachment: fixed;
 }
 
@@ -174,7 +175,7 @@ li a {
 Pay with Visa
 =============*/
 
-#payWithVisaNav {
+.secondNav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -189,7 +190,7 @@ Pay with Visa
     color: #1a1e5a;
 }
 
-#payWithVisaNav li a {
+.secondNav li a {
     height: 1.5rem;
     display: block;
     color: #1a1e5a;
@@ -201,4 +202,8 @@ Pay with Visa
     font-size: 1.3rem;
     font-weight: 300;
     margin-top: 2%;
+}
+
+#partnerWithUsNav {
+    height: -1.5rem;
 }

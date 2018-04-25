@@ -10,5 +10,9 @@ body {
     /*GRADIENT COLORS top:132E96 bottom:2861AE 
        background-image: url("../assets/images/VizaFifa.jpeg");
     */
-    color: pink
+    color: #ffffff;
+}
+
+p {
+    margin: 200px
 }

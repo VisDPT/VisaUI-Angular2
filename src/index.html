@@ -13,55 +13,75 @@
 
     <script>
         $(document).ready(function() {
-            $('#payWithVisaNav').hide();
+            $('.secondNav').hide();
+            //$('#partnerWithUsNav').hide();
+            //$('#runYourBusinessNav').hide();
+            //$('#visaEverywhereNav').hide();
+
         });
     </script>
 </head>
 
 <body>
-
+    <!-- =========== MAIN NAV ================= -->
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active"><img src="../assets/images/logo.png" id="logo" alt="Visa Logo"></a>
 
-        <a class="active" href="#payWithVisa" id="payWithVisa"> Pay with Visa</a>
-        <a href="#PartnerWithUs">Partner With Us</a>
-        <a href="#runYourBusiness">Run Your Business</a>
-        <a href="#travelWithVisa">Travel With Visa</a>
-        <a href="#visaEverywhere">Visa Everywhere </a>
+        <a href="#" id="payWithVisa"> Pay with Visa</a>
+        <a href="#" id="partnerWithUs">Partner With Us</a>
+        <a href="#" id="runYourBusiness">Run Your Business</a>
+        <a href="https://usa.visa.com/travel-with-visa/travel.html">Travel With Visa</a>
+        <a href="#" id="visaEverywhere">Visa Everywhere </a>
         <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    <!--  <div class="topnav" id="myTopnav">
-
-        <div class="navItems">
-
-            <a><img src="../assets/images/logo.png" id="logo"></a>
-
-            <a class="active" href="#payWithVisa" id="payWithVisa"> Pay with Visa</a>
-            <a href="#PartnerWithUs">Partner With Us</a>
-            <a href="#runYourBusiness">Run Your Business</a>
-            <a href="#travelWithVisa">Travel With Visa</a>
-            <a href="#visaEverywhere">Visa Everywhere </a>
-
-            <a href="#search">
-                <i class="fas fa-search"></i>
-            </a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
-        </div>
-
-
-    </div> -->
+    <!-- =========== payWithVisa NAV ================= -->
     <div class="navbar">
         <ul>
-            <div id="payWithVisaNav">
-                <li>
-                    <a><img src="../assets/images/logo.png" id="logo"></a>
-                </li>
-                <li><a class="active" href="#payWithVisa" id="payWithVisa"> Visa Checkout</a></li>
-                <li><a href="#PartnerWithUs">Find a Card</a></li>
-                <li><a href="#runYourBusiness">Visa Offers + Perks</a></li>
-                <li><a href="#travelWithVisa">Contactless Payments</a></li>
-                <li><a href="#visaEverywhere">Payment Technology </a></li>
+            <div id="payWithVisaNav" class="secondNav">
+                <!--  <li><a href="#"> Visa Checkout</a></li>
+                <li><a href="#">Find a Card</a></li>
+                <li><a href="#">Visa Offers + Perks</a></li>
+                <li><a href="#">Contactless Payments</a></li>
+                <li><a href="#">Payment Technology </a></li> -->
+            </div>
+        </ul>
+    </div>
+
+    <!-- =========== partnerWithUs NAV ================= 
+    <div class="navbar">
+        <ul>
+            <div id="partnerWithUsNav" class="secondNav">
+
+                <li><a href="#"> Visa Ready</a></li>
+                <li><a href="#">Payment Technology</a></li>
+                <li><a href="#">Visa Developer</a></li>
+                <li><a href="#">Info for Partner</a></li>
+                <li><a href="#">Visa Performance Solutions</a></li>
+            </div>
+        </ul>
+    </div>
+
+
+
+    <div class="navbar">
+        <ul>
+            <div id="runYourBusinessNav" class="secondNav">
+                <li><a href="#"> Accept Visa Payments</a></li>
+                <li><a href="#"> Small Business Tools</a></li>
+                <li><a href="#"> Commercial Solutions</a></li>
+
+            </div>
+        </ul>
+    </div> 
+
+    <div class="navbar">
+        <ul id="visaEverywhereNavbar">
+            <div id="visaEverywhereNav" class="secondNav">
+                <li><a href="#"> Visa Checkout</a></li>
+                <li><a href="#">Find a Card</a></li>
+                <li><a href="#">Visa Offers + Perks</a></li>
+                <li><a href="#">Contactless Payments</a></li>
+                <li><a href="#">Payment Technology </a></li>
                 <li>
                     <a href="#search">
                         <i class="fas fa-search"></i>
@@ -69,19 +89,64 @@
                 </li>
             </div>
         </ul>
-    </div>
+    </div> -->
 
     <app-root>Loading...</app-root>
 
     <script>
-        $(document).ready(function() {
-            $('#payWithVisaNav').hide();
+        // $('#payWithVisa').click(function() {
+        //     $(".secondNav").toggle();
+
+        // });
+
+        var runYourBusinessNav = '<li><a href="#"> Accept Visa Payments</a></li><li><a href="#"> Small Business Tools</a></li><li><a href="#"> Commercial Solutions</a></li>';
+
+        $('#runYourBusiness').on("click", function() {
+            $('.secondNav').empty(); //clears the nav
+            $(".secondNav").toggle();
+            console.log('secondNav emptied');
+            $('.secondNav').append(runYourBusinessNav)
+            console.log(runYourBusinessNav);
         });
 
-        $("#payWithVisa").click(function() {
-            $("#payWithVisaNav").show();
+
+        var runYourBusinessNav = '<li><a href="#"> Accept Visa Payments</a></li><li><a href="#"> Small Business Tools</a></li><li><a href="#"> Commercial Solutions</a></li>';
+
+        $('#runYourBusiness').on("click", function() {
+            $('.secondNav').empty(); //clears the nav
+            $(".secondNav").toggle();
+            console.log('secondNav emptied');
+            $('.secondNav').append(runYourBusinessNav)
+            console.log(runYourBusinessNav);
         });
 
+
+
+        var visaEverywhere = '<li><a href="#"> Visa asdfasdfasdf</a></li><li><a href="#">Find a Card</a></li><li><a href="#">Visa Offers + Perks</a></li><li><a href="#">Contactless Payments</a></li><li><a href="#">Payment Technology </a></li><li><a href="#search"><i class="fas fa-search"></i></a>';
+
+        $('#visaEverywhere').on("click", function() {
+
+            $('.secondNav').empty(); //clears the nav
+            $(".secondNav").toggle();
+            console.log('secondNav emptied');
+            $('.secondNav').append(visaEverywhere)
+            console.log(visaEverywhere);
+        });
+
+
+
+
+        // $('#partnerWithUs').click(function() {
+        //     $("#partnerWithUsNav").toggle();
+        // });
+
+        // $('#runYourBusiness').click(function() {
+        //     $("#runYourBusinessNav").toggle();
+        // });
+
+        // $('#visaEverywhere').click(function() {
+        //     $("#visaEverywhereNav").toggle();
+        // });
 
         function myFunction() {
             var x = document.getElementById("myTopnav");
