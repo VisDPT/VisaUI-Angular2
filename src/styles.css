@@ -228,4 +228,30 @@ Pay with Visa
     height: 50px;
 }
 
-.magnifyingGlass {}
+#magnifyingGlass {
+    height: 200px;
+    color: #FFB700;
+    margin-top: -18px;
+    /* vertical-align: middle; */
+    margin-left: 100px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-60 {
+    font-size: 60px;
+}
