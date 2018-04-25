@@ -83,6 +83,20 @@ body {
     display: none;
 }
 
+#payWithVisa,
+#partnerWithUs,
+#runYourBusiness,
+#visaEverywhere,
+#travel {
+    margin-left: 2%;
+}
+
+#logo {
+    height: 50px;
+    margin-top: -16px;
+    margin-left: 100px;
+}
+
 a:hover {
     color: #EFC102;
 }
@@ -134,11 +148,6 @@ ul {
 
 li {
     float: left;
-}
-
-#logo {
-    height: 55px;
-    margin-top: -16px;
 }
 
 .navbar {
@@ -197,9 +206,10 @@ Pay with Visa
     text-align: center;
     padding: 2rem 20px;
     text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    /* font-family: 'open-sans', sans-serif, Tahoma;*/
-    font-size: 1.3rem;
+    font-family: 'open-sans', sans-serif, Tahoma;
+    /* font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'open-sans', sans-serif, Tahoma;*/
+    font-size: 1.5rem;
     font-weight: 300;
     margin-top: 2%;
 }
