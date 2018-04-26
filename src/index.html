@@ -28,7 +28,6 @@
         <a href="#" id="runYourBusiness">Run Your Business</a>
         <a href="https://usa.visa.com/travel-with-visa/travel.html" id="travel">Travel With Visa</a>
         <a href="#" id="visaEverywhere">Visa Everywhere </a>
-
         <a href="#">
             <i class="material-icons md-60" id="magnifyingGlass">search</i>
         </a>
@@ -143,6 +142,17 @@
         // $('#visaEverywhere').click(function() {
         //     $("#visaEverywhereNav").toggle();
         // });
+        var search = '<li><a href="#"> <input type="text" size="100" name="search" placeholder=" Visa Search"></li></a>';
+
+        $('#magnifyingGlass').on("click", function() {
+
+            $('.secondNav').empty(); //clears the nav
+            $(".secondNav").toggle();
+            console.log('secondNav emptied');
+            $('.secondNav').append(search)
+            console.log(search);
+        });
+
 
         function myFunction() {
             var x = document.getElementById("myTopnav");
